@@ -1,27 +1,50 @@
 .site-header {
-	margin-top:30px;
+	margin-top:20px;
 }
 
-.site-navigation {
-	margin-top: 10px;
-	margin-bottom: 10px;
+.site-header img {
+	max-width: 100%;
+	height: auto;
 }
 
-.site-home-big-links {
+.site-header .navigation-top ul {
+	list-style: none;
+	text-align: right;
+}
+
+.site-header .navigation-top ul > li {
+	display: inline-block;
+	margin-left: 10px;
+	*display: inline;
+	zoom: 1;
+}
+
+.site-header .navbar-default {
+	/*background: none;*/
+	border: none;
+}
+
+.site-header .navigation-bottom .navbar-collapse {
+	padding:0;
+}
+
+.site-header .navigation-bottom .navbar-nav {
+	float:right;
+}
+
+.home-content-top {
+	margin-top:10px;
+}
+
+.home-content-top .site-home-big-links {
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
 
-.site-home-big-links > div {
-	text-align: center;
-
-}
-
-.site-home-big-links > div > .individual-box {
+.home-content-top .site-home-big-links > div > .individual-box {
 	display: block;
-	width: 80%;
 	min-height: 100px;
-	margin: 0 auto;
+	margin: 0;
 	background: #efefef;
 	border: 1px solid #ccc;
 	font-size: 20px;
@@ -30,26 +53,96 @@
 	text-decoration: none;
 }
 
-.site-home-big-links > div > .individual-box:hover {
-	background: #ddd;
+.home-content-top .site-home-big-links > div > .individual-box img {
+	max-width: 100%;
+	height: auto;
 }
 
-.site-home-bottom-headline {
-	text-align: center;
+.home-content-top .site-home-big-links > div > .individual-box p {
+	max-width: 100%;
+	height: auto;
 }
 
-.footer {
-	text-align: center;
-	margin-bottom: 15px;
+.site-home-content-bottom .content-area {
+	position: relative;
 }
 
-.footer > div:first-child {
+.site-home-content-bottom .content-area > .learn-more {
+	position: absolute;
+	top: 12px;
+	right: 5px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.site-home-content-bottom .content-area > .learn-more > a {
+	background: none;
+	padding: 4px 10px;
+	border-radius: 3px;
+	border: 1px solid #efefef;
+	color: #bbb;
+}
+
+.site-home-content-bottom .content-area > .learn-more > a:hover {
+	background: green;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.site-footer {
+	background: #000;
+	color: #fff;
 	text-align: left;
+	padding: 25px 0;
 }
 
-.footer > div:last-child {
-	text-align: right;
+.site-footer a {
+	color: #fff;
+	text-decoration: none;
 }
+
+.site-footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.site-footer .footer-content h4 {
+	text-transform: uppercase;
+}
+
+.site-footer .footer-content > div > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-footer .footer-content > div > ul > li {
+	margin: 2px 0;
+}
+
+/* BUTTONS AND STUFF */
+.custom-btn {
+	padding: 7px 10px;
+	display: inline-block;
+	text-align: left;
+	font-weight: bold;
+	margin-top: 3px;
+	*display: inline;
+	zoom: 1;
+}
+
+.btn-green {
+	background: green;
+	color: #fff;
+}
+
+.btn-green:hover {
+	text-decoration: none;
+	background: red;
+	color: #fff;
+}
+
 
 @media (max-width: 768px) {
 	.page-content .page-links {
@@ -60,5 +153,12 @@
 		display: inline-block;
 		*display: inline;
 		zoom: 1;
+	}
+	.site-header .navbar-default {
+		background: #efefef;
+		border: none;
+	}
+	.site-header .navigation-bottom .navbar-collapse {
+		padding:0 15px;
 	}
 }
