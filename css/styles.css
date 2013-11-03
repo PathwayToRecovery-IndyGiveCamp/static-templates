@@ -330,7 +330,11 @@ a, a:active, a:visited {
 }
 
 .dropdown-menu > li > a {
-	color: #fff;
+	color: #fff !important;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background: none;
 }
 
 
@@ -350,5 +354,22 @@ a, a:active, a:visited {
 	}
 	.site-header .navigation-bottom .navbar-collapse {
 		padding:0 15px;
+	}
+	.navigation .navbar-nav {
+		margin-left: 0;
+	}
+	.navigation .navbar-nav > li {
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+}
+
+@media (min-width: 992px) {
+	.navigation .navbar-nav > li {
+		float: none;
+		width: 100%;
+		text-align: left;
+		margin-left: 20px;
 	}
 }
