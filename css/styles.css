@@ -366,6 +366,12 @@ a, a:active, a:visited {
 	background: none;
 }
 
+.youtube_sc.mobile a {
+  background: none !important;
+  padding: 0 !important;
+  top: auto !important;
+} 
+
 
 @media (max-width: 768px) {
 	.navigation .navbar-nav {
