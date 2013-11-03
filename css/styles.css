@@ -9,6 +9,10 @@ h1, h2, h3, h3, h5, h6 {
 	font-weight: bold;
 }
 
+a, a:active, a:visited {
+	color: #7c8050;
+}
+
 .facebook-link {
 	position: relative;
 	display: block;
@@ -224,6 +228,10 @@ h1, h2, h3, h3, h5, h6 {
 	margin-bottom: 10px;
 }
 
+.page-content-container {
+	padding-bottom: 40px;
+}
+
 .site-footer {
 	background: #3d3731 url(/img/footer-bg.jpg) repeat;
 	color: #fff;
@@ -267,6 +275,38 @@ h1, h2, h3, h3, h5, h6 {
 	border-width: 5px;
 	border-bottom:none;
 }
+
+/* sidebar stuff */
+.sidebar-content-area ul, .custom-ul  {
+	list-style: none;
+	margin:0 0 20px;
+	padding:0;
+}
+
+.sidebar-content-area ul > li, .custom-ul > li {
+	list-style: none;
+	display: block;
+	border-bottom: 1px solid #ccc;
+}
+
+.sidebar-content-area ul > li:first-child, .custom-ul > li:first-child {
+	border-top: 1px solid #ccc;
+}
+
+.sidebar-content-area ul > li > a, .custom-ul > li > a {
+	padding: 7px 9px;
+	display: block;
+}
+
+.sidebar-content-area ul > li > a:hover, .custom-ul > li > a:hover  {
+	text-decoration: none;
+	background: #efefef;
+}
+
+.custom-ul > li:first-child {
+	border-top:none;
+}
+
 
 /* navigation overrides */
 .navbar-default .navbar-nav>.open > a
