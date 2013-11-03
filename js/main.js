@@ -1,7 +1,9 @@
 // test
 $(document).ready(function() {
+	if( $('.navbar-header').height() <= 0 ) {
   (function ($, window, delay) {
     // http://jsfiddle.net/AndreasPizsa/NzvKC/
+
     var theTimer = 0;
     var theElement = null;
       var theLastPosition = {x:0,y:0};
@@ -39,4 +41,5 @@ $(document).ready(function() {
       }, delay);
     });
   })($, window, 0); // 200 is the delay in milliseconds
+}
 });
