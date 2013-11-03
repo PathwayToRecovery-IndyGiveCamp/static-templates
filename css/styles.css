@@ -1,12 +1,11 @@
-html {
-	height: 100%;
+html, body{
+    height: 100%
 }
 
 body {
 	background: #dfdfd2 url(/img/background-repeat.png) repeat;
 	border-top: 5px solid #4d4d4d;
 	font-family: 'PT Serif', serif;
-	height: 100%;
 }
 
 h1, h2, h3, h3, h5, h6 {
@@ -16,6 +15,23 @@ h1, h2, h3, h3, h5, h6 {
 
 a, a:active, a:visited {
 	color: #7c8050;
+}
+
+.wrapper {
+	min-height: 100%;
+	position:relative;
+}
+
+.push {
+	padding-bottom: 260px;
+}
+
+.site-footer {
+	height:260px;
+	width:100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 
 .facebook-link {
