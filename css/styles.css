@@ -24,6 +24,7 @@ a, a:active, a:visited {
 
 .push {
 	padding-bottom: 260px;
+	background: url(/img/home-bottom-bg.jpg) repeat;
 }
 
 .site-footer {
@@ -134,11 +135,13 @@ a, a:active, a:visited {
 	background-image: url(/img/torn-paper.png);
 	background-repeat: repeat-x;
 	background-position: top center;
+	position: relative;
+	top: -40px;
+	margin-top: 40px;
 }
 
 .home-content-bottom {
 	padding-top: 20px;
-	background: url(/img/home-bottom-bg.jpg) repeat;
 }
 
 .home-content-bottom .site-home-big-links {
